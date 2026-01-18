@@ -81,7 +81,7 @@
 
 
 #banner{
-    background-image: url(/assets/hero-bg.png);
+    background-image: url("../assets/hero-bg.png");
     border: 1px solid red;
 }
 
