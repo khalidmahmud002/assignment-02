@@ -1,0 +1,117 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+.inter-font{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Shared Effect */
+#navbar #banner {
+    width: 75%;
+    max-width: 1600px;
+}
+
+.btn{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12.5px 16px ;
+    border-radius: 100px;
+    border: none;
+    color: white;
+    background: linear-gradient(60deg, #F7E93F, #FB09B4, #9100F8);
+}
+
+.btn-border{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 12.5px 16px ;
+    border-radius: 100px;
+    background-color: transparent;
+    border-color: #00FF88;
+    color: #00FF88;
+}
+
+
+#navbar{
+      background-color: #1A0B2E;
+    display: flex;
+    border: 1px solid red;
+    padding: 24px 200px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navbar .logo{
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+
+.logo .logo-gradient{
+    background: linear-gradient(60deg, #F7E93F, #FB09B4, #9100F8);
+    -webkit-text-fill-color: transparent;
+    background-clip:text ;
+}
+
+
+.menu{
+    display: flex;
+    gap: 32px;
+    text-decoration: none;
+}
+
+
+.menu li{
+    list-style: none;
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+}
+
+
+
+#banner{
+    background-image: url(/assets/hero-bg.png);
+    border: 1px solid red;
+}
+
+.banner-image .hero-circle{
+    padding: 101px 625px 40px;
+}
+
+.banner-image .microphone{
+    position: absolute;
+    padding: 179px 742px 406px;
+}
+
+#banner .banner-text{
+    text-align: center;
+}
+
+
+.banner-text h3{
+    font-size: 60px;
+    font-weight: bolder;
+    color: #ffffff;
+    padding-bottom: 8px;
+}
+
+.banner-text p{
+    font-size: 16px;
+    color: #ffffff;
+    padding-bottom: 24px;
+}
+
+.banner-text .banner-btn{
+    padding-bottom: 101px;
+}
