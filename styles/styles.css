@@ -28,7 +28,8 @@
 #navbar
 #banner
 #about 
-#why-us{
+#why-us
+#footer{
     width: 75%;
     max-width: 1600px;
     margin: 0 auto;
@@ -80,7 +81,7 @@
 #navbar{
     background-color: #1A0B2E;
     display: flex;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 24px 200px;
     margin: 0 auto;
     align-items: center;
@@ -93,7 +94,7 @@
     color: white;
 }
 
-.logo .logo-gradient{
+.logo-gradient{
     background: linear-gradient(60deg, #F7E93F, #FB09B4, #9100F8);
     -webkit-text-fill-color: transparent;
     background-clip:text ;
@@ -119,7 +120,7 @@
 /* This is Banner Section */
 
 #banner{
-    border: 1px solid red;   
+    /* border: 1px solid red;    */
     padding: 101px 525px;
     background-image: url("../assets/hero-bg.png");
     background-repeat: no-repeat;    
@@ -180,7 +181,7 @@
 
 /* This is About Section */
 #about{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     padding: 50px 200px 120px;
     background-color: #1A0B2E;
 }
@@ -233,7 +234,7 @@
 #why-us{
     padding: 120px 200px;
     background-color: #1A0B2E;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .why-us-container{
@@ -301,7 +302,7 @@
 #features{
     padding: 120px 200px;
     background-color: #1A0B2E;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 .section-header h3{
@@ -314,6 +315,7 @@
 .episodes .card-container{
     display: flex;
     padding-top: 40px;
+    justify-content: center;
     /* border: 1px solid red; */
     gap: 30px;
 }
@@ -363,8 +365,8 @@
 
 /* This is Host Section */
 .host{
-    padding: 120px 200px;
-    border: 1px solid red;
+    padding: 120px 200px 0px;
+    /* border: 1px solid red; */
 }
 
 .host-heading h3{
@@ -380,7 +382,7 @@
     padding: 40px;
     border-radius: 40px;
     background-color: #35116540;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 
@@ -395,4 +397,69 @@
     font-size: 32px;
     font-weight: bold;
     color: #ffffff;
+}
+
+.host-info p{
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff60;
+    padding-top: 16px;
+}
+
+
+.circle{
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    display: flex;
+    border: 1px solid #533C72;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.host-info .icon{
+    padding-top: 16px;
+    display: flex;
+    gap: 8px;
+}
+
+
+
+/* This is Footer Section */
+
+#footer{
+    padding: 120px;
+    background-color: #1A0B2E;
+    /* border: 1px solid red; */
+    text-align: center;
+}
+
+
+.footer-logo h3{
+    font-size: 60px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.footer-button p{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.footer-button{
+    padding-top: 34.5px;
+    display: flex;
+    gap: 40px;
+    text-decoration: none;
+    justify-content: center;
+    color: #ffffff;
+}
+
+
+
+.copyright{
+    font-size: 16px;
+    padding-top: 32px;
+    color: #FAFAFA60;
 }
