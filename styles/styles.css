@@ -26,7 +26,7 @@
     padding: 12.5px 16px ;
     border-radius: 100px;
     border: none;
-    color: white;
+    color: #ffffff;
     background: linear-gradient(60deg, #F7E93F, #FB09B4, #9100F8);
 }
 
@@ -40,9 +40,20 @@
     color: #00FF88;
 }
 
+.badge{
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+    padding: 8px 16px;
+    border: none;
+    background-color: #00FF88;
+    border-radius: 100px;
+    box-shadow: 0 3px 27px #00FF8850;
+}
+
 
 #navbar{
-      background-color: #1A0B2E;
+    background-color: #1A0B2E;
     display: flex;
     border: 1px solid red;
     padding: 24px 200px;
@@ -81,21 +92,39 @@
 
 
 #banner{
+    border: 1px solid red;   
+    padding: 101px 525px;
     background-image: url("../assets/hero-bg.png");
-    border: 1px solid red;
+    margin: 0 auto; 
+    background-repeat: no-repeat;    
+    background-size: cover;
 }
 
-.banner-image .hero-circle{
-    padding: 101px 625px 40px;
+#banner .banner-container{
+    margin: 0 auto;
+    text-align: center;
+    width: 550px;
 }
 
 .banner-image .microphone{
     position: absolute;
-    padding: 179px 742px 406px;
+    padding: 77px 116.5px 98px;
 }
 
-#banner .banner-text{
-    text-align: center;
+.banner-icon{
+    position: relative;
+}
+
+.banner-icon .badge{
+    position: absolute;
+    top: 30px; 
+    right: 123px;
+
+}
+
+.banner-heading{
+    /* border: 1px solid red; */
+    margin: 0 auto;
 }
 
 
@@ -103,15 +132,19 @@
     font-size: 60px;
     font-weight: bolder;
     color: #ffffff;
-    padding-bottom: 8px;
+    padding-top: 40px;
 }
 
 .banner-text p{
     font-size: 16px;
     color: #ffffff;
-    padding-bottom: 24px;
+    padding-top: 8px;
 }
 
-.banner-text .banner-btn{
-    padding-bottom: 101px;
+.banner-heading .banner-btn{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    padding-top: 24px;
+    gap: 10px;
 }
