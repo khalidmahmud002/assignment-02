@@ -7,6 +7,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
+/* Key Frame For Moving Microphone */
+
+@keyframes swing-side {
+  0% {transform: translateX(0); }
+  25% {transform: translateX(10px);}
+  50% {transform: translateX(0);}
+  75% {transform: translateX(-10px);}
+  100% {transform: translateX(0);}
+}
+
 .inter-font{
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -109,6 +119,7 @@
 .banner-image .microphone{
     position: absolute;
     padding: 77px 116.5px 98px;
+    animation: swing-side 2s ease-in-out infinite;;
 }
 
 .banner-icon{
