@@ -234,7 +234,6 @@
     padding: 120px 200px;
     background-color: #1A0B2E;
     border: 1px solid red;
-
 }
 
 .why-us-container{
@@ -296,5 +295,32 @@
     line-height: 24px;
     color: #ffffff60;
     padding-bottom: 16px;
+}
+
+
+#features{
+    padding: 120px 200px;
+    background-color: #1A0B2E;
+    border: 1px solid red;
+}
+
+.section-header h3{
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+
+.episodes .card-container{
+    display: flex;
+    padding-top: 40px;
+    border: 1px solid red;
+    gap: 30px;
+}
+
+.card-container .card{
+    width: 380px;
+    border: 1px solid red;
+    border-radius: 30px;
 }
 
