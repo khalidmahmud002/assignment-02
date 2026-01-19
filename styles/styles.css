@@ -314,13 +314,85 @@
 .episodes .card-container{
     display: flex;
     padding-top: 40px;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     gap: 30px;
 }
 
 .card-container .card{
     width: 380px;
-    border: 1px solid red;
     border-radius: 30px;
+    background: #250D44;
 }
 
+.card .card-video{
+    border-radius: 30px 30px 0 0;
+    overflow: hidden;
+}
+
+.card-video iframe{
+    width: 100%;
+    height: 214px;
+}
+
+.card .card-content{
+    padding: 24px;
+}
+
+.card .card-content h3{
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+
+.card .card-content p{
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff60;
+    padding-top: 12px;
+}
+
+.card-content .time{
+    font-size: 16;
+    font-weight: 600;
+    color: #00FF88;
+    padding-top: 12px;
+}
+
+
+
+/* This is Host Section */
+.host{
+    padding: 120px 200px;
+    border: 1px solid red;
+}
+
+.host-heading h3{
+    font-size: 48px;
+    font-weight: bold;
+    color:  #ffffff;
+    text-align: center;
+}
+
+
+.host .host-section{
+    margin-top: 40px;
+    padding: 40px;
+    border-radius: 40px;
+    background-color: #35116540;
+    border: 1px solid red;
+}
+
+
+.host-content{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+
+.host-content .host-info h3{
+    font-size: 32px;
+    font-weight: bold;
+    color: #ffffff;
+}
