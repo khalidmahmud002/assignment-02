@@ -25,9 +25,13 @@
 }
 
 /* Shared Effect */
-#navbar #banner {
+#navbar
+#banner
+#about 
+#why-us{
     width: 75%;
     max-width: 1600px;
+    margin: 0 auto;
 }
 
 .btn{
@@ -37,7 +41,13 @@
     border-radius: 100px;
     border: none;
     color: #ffffff;
+    cursor: pointer;
     background: linear-gradient(60deg, #F7E93F, #FB09B4, #9100F8);
+}
+
+.btn:hover{
+    background: #00FF88;
+    color: #000000;
 }
 
 .btn-border{
@@ -48,6 +58,11 @@
     background-color: transparent;
     border-color: #00FF88;
     color: #00FF88;
+}
+
+.btn-border:hover{
+    background: linear-gradient(60deg, #F7E93F, #FB09B4, #9100F8);
+    color: #ffffff;
 }
 
 .badge{
@@ -101,13 +116,15 @@
 
 
 
+/* This is Banner Section */
+
 #banner{
     border: 1px solid red;   
     padding: 101px 525px;
     background-image: url("../assets/hero-bg.png");
-    margin: 0 auto; 
     background-repeat: no-repeat;    
     background-size: cover;
+    height: auto;    
 }
 
 #banner .banner-container{
@@ -159,3 +176,125 @@
     padding-top: 24px;
     gap: 10px;
 }
+
+
+/* This is About Section */
+#about{
+    border: 1px solid red;
+    padding: 50px 200px 120px;
+    background-color: #1A0B2E;
+}
+
+.about-container{
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.about-heading h3{
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.about-heading p{
+    font-size: 16px;
+    line-height: 20px;
+    color: #ffffff80;
+}
+
+
+.about-container hr{
+    margin: 80px 200px;
+    border: none;
+    height: 1px;
+    background-color: #ffffff50;
+}
+
+.achievements{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+
+.achievements h3{
+    font-size: 48px;
+    font-weight: 900;
+    color: #00FF88;
+}
+
+.achievements p{
+    font-size: 16px;
+    color: #ffffff80;
+}
+
+
+/* This is "Why Choose TechWave" Section */
+#why-us{
+    padding: 120px 200px;
+    background-color: #1A0B2E;
+    border: 1px solid red;
+
+}
+
+.why-us-container{
+    margin: 0 auto;
+    
+}
+
+
+.why-us-container .heading h3{
+    font-size: 48px;
+    font-weight: bold;
+    color: #ffffff;
+        text-align: center;    
+
+}
+
+.benefit{
+    padding-top: 40px;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 380px);
+    
+}
+
+
+.benefit-ele{
+    background-color: #35116540;
+    padding: 40px;
+    border-radius: 40px;
+    align-content: center;
+}
+
+.big-column{
+    grid-row: span 2;
+}
+
+.big-row{
+    grid-column: span 2;
+}
+
+.small-column{
+    grid-column: span 1;
+}
+
+.benefit img{
+    padding-bottom: 16px;
+}
+
+.benefit h3{
+    font-size: 24px;
+    font-weight: bold;
+    color: #ffffff;
+    padding-bottom: 16px;
+}
+
+.benefit p{
+    font-size: 16px;
+    line-height: 24px;
+    color: #ffffff60;
+    padding-bottom: 16px;
+}
+
