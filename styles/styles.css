@@ -56,6 +56,7 @@
     font-weight: 500;
     padding: 12.5px 16px ;
     border-radius: 100px;
+    cursor: pointer;
     background-color: transparent;
     border-color: #00FF88;
     color: #00FF88;
@@ -430,7 +431,8 @@
 
 #footer{
     padding: 120px;
-    background-color: #1A0B2E;
+    background: url("../assets/footer-bg.png");
+    background-size: cover;
     /* border: 1px solid red; */
     text-align: center;
 }
