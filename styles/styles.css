@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,33 +7,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 
-.inter-font{
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 
+
 /* Shared Style */
-.gradient{
+.gradient {
     background: linear-gradient(60deg, #F7E93F, #FB09B4, #9100F8);
     -webkit-text-fill-color: transparent;
     background-clip: text;
 }
 
+
+.hide{
+    display: none;
+}
+
 .why-us-card,
 .about-container,
 .features-container,
-.features-card
-{
+.features-card,
+.nav-container {
     width: 75%;
     max-width: 1600px;
     margin: 0 auto;
 }
 
 
-.btn{
+.btn {
     padding: 12.5px 16px;
     color: white;
     font-size: 1rem;
@@ -43,59 +49,63 @@
     background: linear-gradient(60deg, #F7E93F, #FB09B4, #9100F8);
 }
 
-.btn-border{
+.btn-border {
     padding: 12.5px 16px;
-    color:#00FF88;
+    color: #00FF88;
     font-size: 1rem;
     font-weight: 600;
     border-radius: 50px;
     background: none;
     border: 1px solid #00FF88;
-    }
+}
 
 /* This is Nav Section */
 
-#navbar{
+#navbar {
     padding: 24px 200px;
     background-color: #1A0B2E;
     color: white;
 }
 
+.hamburger{
+    display: none;
+}
 
-.nav-container{
-    width: 75%;
+.nav-container {
+    width: 80%;
     max-width: 1600px;
     margin: 0 auto;
     /* border: 1px solid red; */
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
 
 
-.logo{
+.logo {
     font-size: 2.5rem;
 }
 
 
 
 
-.nav-links ul{
+.nav-links ul {
     display: flex;
     list-style: none;
     gap: 30px;
 }
 
 /* This is Hero Section */
-#hero{
+#hero {
     background-color: #1A0B2E;
     color: white;
 }
 
-.hero-container{
+.hero-container {
     padding: 101px 525px;
     /* border: 1px solid red; */
-    background: url("../assets/hero-bg.png"), #1A0B2E ;
+    background: url("../assets/hero-bg.png"), #1A0B2E;
     background-repeat: no-repeat;
     background-position: center;
     margin: 0 auto;
@@ -104,7 +114,7 @@
 }
 
 
-.hero-img{
+.hero-img {
     /* border: 1px solid red; */
     margin: 0 auto;
     position: relative;
@@ -113,18 +123,18 @@
     align-items: center;
 }
 
-.hero-circle{
+.hero-circle {
     width: 100%;
     height: 100%;
 }
 
-.microphone{
+.microphone {
     position: absolute;
     padding: 77px 116.5px 98px;
 }
 
 
-.badge{
+.badge {
     position: absolute;
     top: 12px;
     right: 50px;
@@ -141,19 +151,19 @@
 
 
 
-.hero-heading{
+.hero-heading {
     /* border: 1px solid red; */
     justify-content: center;
     padding-top: 40px;
 }
 
-.hero-info h3{
+.hero-info h3 {
     font-size: 60px;
     font-weight: 800;
     padding-bottom: 8px;
 }
 
-.hero-info p{
+.hero-info p {
     color: #FFFFFF80;
     padding-bottom: 24px;
 }
@@ -161,65 +171,65 @@
 
 /* This is About Section */
 
-#about{
+#about {
     padding: 50px 200px 120px;
     background-color: #1A0B2E;
     color: white;
 }
 
-.about-container{
+.about-container {
     margin: 0 auto;
     text-align: center;
 }
 
-.about-heading h3{
+.about-heading h3 {
     font-size: 48px;
     font-weight: 600;
     padding-bottom: 16px;
 }
 
-.about-heading p{
+.about-heading p {
     color: #FFFFFF80;
 }
 
-hr{
+hr {
     border: none;
     background-color: #FFFFFF80;
     height: 1px;
     margin: 80px auto;
-    width: 1200px;
+    width: min(1200px, 100%);
 }
 
-.about-dashboard{
+.about-dashboard {
     display: flex;
-   justify-content: center;
-   gap: 80px;
+    justify-content: center;
+    gap: 80px;
 }
 
-.about-info h3{
+.about-info h3 {
     font-size: 48px;
     font-weight: 900;
     color: #00FF88;
 }
 
-.about-info p{
+.about-info p {
     padding-top: 16px;
     color: #FFFFFF80;
 }
 
 /* This is Why-us Section */
-#why-us{
+#why-us {
     padding: 120px 200px;
     background-color: #230E3D;
 }
 
-.why-us-container{
+.why-us-container {
     /* border: 1px solid red; */
     color: white;
     margin: 0 auto;
 }
 
-.why-us-heading{
+.why-us-heading {
     font-size: 48px;
     font-weight: bold;
     text-align: center;
@@ -228,7 +238,7 @@ hr{
 
 
 
-.why-us-card{
+.why-us-card {
     padding-top: 40px;
     display: grid;
     gap: 30px;
@@ -237,7 +247,7 @@ hr{
 }
 
 
-.card-info{
+.card-info {
     padding: 40px;
     background-color: #35116540;
     border-radius: 40px;
@@ -247,53 +257,53 @@ hr{
 
 
 
-.big-column{
+.big-column {
     grid-row: span 2;
 }
 
-.big-row{
+.big-row {
     grid-column: span 2;
 }
 
-.small-column{
+.small-column {
     grid-column: span 1;
 }
 
-.card-info img{
+.card-info img {
     width: 50px;
 }
 
-.card-info h3{
+.card-info h3 {
     font-size: 24px;
     font-weight: 600;
     padding-top: 16px;
 }
 
-.card-info p{
+.card-info p {
     padding-top: 16px;
     color: #FFFFFF60;
 }
 
 /* This is Fretures Episods Section */
 
-#features{
+#features {
     padding: 120px 200px;
     background-color: #1A0B2E;
-    
+
 }
 
-.features-container{
+.features-container {
     margin: 0 auto;
     color: white;
 }
 
-.episods-heading{
+.episods-heading {
     font-size: 48px;
     font-weight: 600;
     text-align: center;
 }
 
-.features-card{
+.features-card {
     /* border: 1px solid red; */
     width: auto;
     padding-top: 40px;
@@ -303,7 +313,7 @@ hr{
     justify-content: center;
 }
 
-.features-info{
+.features-info {
     /* border: 1px solid red; */
     width: 380px;
     height: 440px;
@@ -312,30 +322,30 @@ hr{
 }
 
 
-.features-video iframe{
+.features-video iframe {
     width: 100%;
     height: 214px;
     border-radius: 24px 24px 0px 0px;
     overflow: hidden;
 }
 
-.features-content{
+.features-content {
     padding: 24px;
 }
 
-.features-content h3{
+.features-content h3 {
     font-size: 24px;
     font-weight: 600;
     padding-bottom: 12px;
 }
 
-.features-content p{
+.features-content p {
     line-height: 24px;
     color: #FFFFFF60;
     padding-bottom: 12px;
 }
 
-.features-content .clock{
+.features-content .clock {
     font-size: 16px;
     font-weight: 600;
     color: #00FF88;
@@ -343,18 +353,18 @@ hr{
 
 
 /* --------------This is Host Section------------- */
-.host{
-    padding-top: 120px;   
+.host {
+    padding-top: 120px;
 }
 
 
-.host-heading{
+.host-heading {
     text-align: center;
     font-size: 3rem;
     padding-bottom: 40px;
 }
 
-.host-info{
+.host-info {
     background-color: #230E3D;
     padding: 40px;
     border-radius: 40px;
@@ -363,20 +373,20 @@ hr{
     gap: 25px;
 }
 
-.host-content h3{
+.host-content h3 {
     font-size: 2rem;
     font-weight: 600px;
     padding-bottom: 16px;
 }
 
-.host-content p{
+.host-content p {
     color: #FFFFFF60;
     padding-bottom: 16px;
 }
 
-.circle{
+.circle {
     height: 40px;
-    width: 40px; 
+    width: 40px;
     border: 1px solid #533C72;
     border-radius: 50px;
     display: flex;
@@ -385,7 +395,7 @@ hr{
 }
 
 
-.host-social{
+.host-social {
     display: flex;
     gap: 8px;
 }
@@ -395,27 +405,27 @@ hr{
 
 /* This is Footer Section */
 
-#footer{
+#footer {
     background: url("../assets/footer-bg.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 }
 
-.footer-container{
+.footer-container {
     padding: 120px;
     text-align: center;
     color: white;
 }
 
 
-.footer-logo{
+.footer-logo {
     font-size: 4.5rem;
     font-weight: 600;
     padding: 32px;
 }
 
-.footer-icon{
+.footer-icon {
     display: flex;
     justify-content: center;
     gap: 40px;
@@ -424,12 +434,22 @@ hr{
 
 /* --------------Responsible for 576--------------- */
 @media screen and (max-width: 576px) {
-        #navbar{
-        padding: 16px 20px;
+   
+   #navbar {
+    padding: 18px 20px;
+    background-color: #1A0B2E;
+   }
+   
+   
+    .logo {
+    font-size: 1.5rem;
     }
 
-    .nav-container{
-        width: 100%;
-        max-width: none;
+    .hamburger{
+        display: flex;
+    }
+    .nav-links,
+    .nav-btn{
+        display: none;
     }
 }
